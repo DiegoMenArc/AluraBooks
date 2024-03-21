@@ -1,0 +1,129 @@
+.carrossel__titulo{
+    text-align: center;
+    color: var(--cor-terc );
+    font-family: var(--fonte-princ);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1.5em 0 0.8em 0 ;
+
+    background-color: var(--branco);
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.card {
+    background-color: var(--branco);
+    margin: 16px 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+.card__descricao img {
+    width: 45%;
+    margin-left: 2px;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin: .3em 0;
+}
+
+.descricao__titulo {
+    color: var(--cor-terc);
+    font-weight: 700;
+}
+
+.descricao__subtitulo {
+    color: var(--cor-secun);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.descricao__texto {
+    font-size: 15px;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botoes__item {
+    margin: 0 1em;
+}
+
+.botoes__ancora {
+    text-decoration: none;
+    background: var(--cor-terc);
+    text-align: center;
+    padding: 1em 1.7em;
+    margin-right: .7em;
+    color: var(--branco);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1024px)  {
+    
+    .carrossel__titulo {
+        font-size: 26px;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0;
+    }
+
+    .swiper {
+        width:70%;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+    
+    .card {
+        width: 40%;
+        margin: 2em auto;
+    }
+
+}
+
+@media screen and (min-width:1252px) {
+
+    .carrossel__conteiner {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        padding: 0 3em 2em 3em;
+    }
+    
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+}
